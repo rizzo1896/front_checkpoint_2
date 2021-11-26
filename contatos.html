@@ -25,7 +25,7 @@
     </header>
 
 
-    <form>
+    <form class="alignflex">
 
         <h1>Formulário</h1>
         <h2>Dados de Contato</h2>
@@ -48,21 +48,21 @@
 
         <div>
             <label for="data">Data de Nascimento</label>
-            <input class="box animate-box" type="date" class="data" required>
+            <input class="box-data animate-box" type="date" class="data" required>
         </div>
 
         <div>
             <h1>Maior ou menor de idade?</h1>
-            <input type="radio" name="person" id="maiorIdade" value="maiorIdade" checked>
-            <label for="maiorIdade">Maior</label>
-            <input type="radio" name="person" id="menorIdade" value="maiorIdade">
-            <label for="menorIdade">Menor</label>
+            <input class="radio" type="radio" name="person" id="maiorIdade" value="maiorIdade" checked>
+            <label class="font" for="maiorIdade">Maior</label>
+            <input class="radio" type="radio" name="person" id="menorIdade" value="maiorIdade">
+            <label class="font" for="menorIdade">Menor</label>
         </div>
        
 
         <div>
-            <label for="interesse">Escolha um ponto de interesse do Rio de Janeiro</label>
-            <select name="interesse" id="interesse" required>
+            <label class="font" for="interesse">Escolha um ponto de interesse do Rio de Janeiro</label>
+            <select class="box-option" name="interesse" id="interesse" required>
                 <option disabled selected value="">Atração</option>
                 <option value="1">Cristo Redentor</option>
                 <option value="2">Pão de Açúcar</option>
@@ -75,17 +75,16 @@
                 <option value="9">Corcovado</option>
                 <option value="10">Sambódromo</option>
             </select>
-
         </div>
 
 
         <div>
             <h1>Qual o interesse na cidade?</h1>
-            <input class="checkbox" type="checkbox" name="teste" id="teste1">
+            <input class="radio" type="checkbox" name="teste" id="teste1">
             <label for="teste1">Turista</label>
-            <input class="checkbox" type="checkbox" name="teste" id="teste2">
+            <input class="radio" type="checkbox" name="teste" id="teste2">
             <label for="teste2">Residente</label>
-            <input class="checkbox" type="checkbox" name="teste" id="teste3">
+            <input class="radio" type="checkbox" name="teste" id="teste3">
             <label for="teste3">Estudante</label>
         </div>     
         <div class="alignflex">
