@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500,700&family=Roboto:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500&family=Roboto:ital@0;1&display=swap");
 
 * {
   padding: 0;
@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url('Assets/asd.jpg');
+  background-image: url("Assets/asd.jpg");
   background-position: center;
   background-position-x: left;
   background-repeat: no-repeat;
@@ -16,12 +16,19 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-@keyframes appear{
-  0%{
-      transform: scale(0.1); opacity: 0%;
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0.1);
+    opacity: 0%;
   }
-    100%{
-      transform: scale(1); opacity: 100%;
+  100% {
+    transform: scale(1);
+    opacity: 100%;
   }
 }
 
@@ -36,11 +43,12 @@ form {
   border-radius: 10px;
 }
 
-form h1, label {
+form h1,
+label {
   color: white;
 }
 
-h2{
+h2 {
   color: white;
   margin-bottom: 15px;
 }
@@ -59,7 +67,7 @@ nav {
   margin-bottom: 50px;
 }
 
-nav>p {
+nav > p {
   font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -68,7 +76,7 @@ nav>p {
   color: white;
 }
 
-nav>div>ul>li {
+nav > div > ul > li {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
@@ -80,7 +88,17 @@ ul {
 li {
   padding: 10px;
   list-style: none;
+}
+
+.link {
+  text-decoration: none;
   color: white;
+  padding: 10px;
+  transition: all ease 0.3s;
+}
+
+.link:hover {
+  background-color: rgba(153, 153, 153, 0.3);
 }
 
 .alignflex {
@@ -102,22 +120,20 @@ li {
 
 .btn-reset {
   background-color: burlywood;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .btn-reset:hover {
   background-color: rgb(224, 212, 195);
-
 }
 
 .btn-submit {
   background-color: cornflowerblue;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .btn-submit:hover {
   background-color: rgb(157, 181, 226);
-
 }
 
 .box {
@@ -147,7 +163,7 @@ li {
 .radio:checked {
   width: 20px;
   height: 20px;
-  transition: .6s;
+  transition: 0.6s;
 }
 
 .font {
@@ -155,7 +171,7 @@ li {
 }
 
 .animate-box {
-  transition: .6s;
+  transition: 0.6s;
 }
 
 .animate-box:hover {
@@ -170,7 +186,7 @@ li {
 
 .box-option {
   margin-top: 10px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   width: 150px;
   height: 30px;
   border: 0;
